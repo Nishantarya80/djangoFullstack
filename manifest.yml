@@ -1,7 +1,7 @@
   applications:
   - name: onlinecourse
     routes:
-      - route: host.domain
+      - route: onlinecourse128.eu-gb.cf.appdomain.cloud
     memory: 128M
     buildpack: python_buildpack
   - name: onlinecourse-nginx
