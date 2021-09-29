@@ -30,6 +30,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['onlinecourse99.herokuapp.com','onlinecourse130.eu-gb.cf.appdomain.cloud','127.0.0.1']
 
 
+
 # Application definition
 INSTALLED_APPS = [
     'onlinecourse.apps.OnlinecourseConfig',
