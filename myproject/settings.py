@@ -24,10 +24,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'aay0j_9b&ky3a7(8m8il+-1ud(scw12@w5!+5-=gsk6ynzi0ls'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 # <HINT> add your cloud host here
-ALLOWED_HOSTS = ['onlinecourse128.eu-gb.cf.appdomain.cloud','127.0.0.1']
+ALLOWED_HOSTS = ['onlinecourse99.herokuapp.com','onlinecourse130.eu-gb.cf.appdomain.cloud','127.0.0.1']
 
 
 # Application definition
@@ -100,7 +100,10 @@ AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
+
 ]
+
+FILE_UPLOAD_PERMISSIONS = 0o744
 
 
 # Internationalization
@@ -123,5 +126,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_ROOT = os.path.join(STATIC_ROOT, 'media')
-MEDIA_URL = '/static/media/'
+MEDIA_URL = '/media/'
 
